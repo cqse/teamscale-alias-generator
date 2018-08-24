@@ -1,5 +1,13 @@
 sudo: false
 language: java
-
 jdk:
 - oraclejdk8
+deploy:
+  provider: releases
+  api_key:
+    secure: z+OV24cOKpAos8rKz3Tnx4N6ipjwLelkCd4QS6Mkbygg0etooPt73g/feHdx7wMTCfa7plZFH4DXSPx2uIeVuVisaAwAo74ixrS1tv4v+EawSgI6iVV0q4DaF+yxWVqYKqzOl32ehFkjiZ7tqaP5MdAqRCtII7thoQS98+xQ1Fi3ITKuJ4Q8nSZ6e1DuqEUU+VYe+oGZepy6GEZ7G+KMSQPou8s6sppp/7m4ECliaTwpEqokVEk3J4KTYExwwXcrhO3i8psCKPXQYdqCvD+O90YszVvwugjIt1z/tQNrc84voUPgz2o6HBwFLTGnSAA785HBCPQSsQboxQkcsaQrj+FRCdFrFKlvxkdD06+xRx+Hjriyvkr9L07vZ3N30zooZEln88DLSQRM/Z8SZO1HgZ9LAGqDfj0qoNXHciSqm5XmhN/RskZHM9VsNZynzcSTgs8QBwt3IzvpZUR1bpBEGh45z2U1rr294ImKc3UUFwkeMFEcOQKOshefLZUjtVaFWhNusOEee1Kx18SEOwNvjbyHX4yxGQbli9llrcTlcCV9wBWOt7DAtrDelwSlJq8LyzzFvcci44K7ZgrAVECH5J1EOw00+4E0ZaHXxgIDUt2ocxFxrTGfXIGSgT3Jtaoe4wECUKVk07XnFETo8bnyRbwqdB7UfqWnF0yigF2vLvM=
+  file: build/distributions/teamscale-alias-generator.zip
+  skip_cleanup: true
+  on:
+    repo: cqse/teamscale-alias-generator
+    tags: true
