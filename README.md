@@ -27,6 +27,8 @@ User Alias generation Tool for Teamscale
   * -u, --user
       Sets the server user.
 ```
+Parameters denoted by * are required.
+
 ### Alias Configuration File
 
 ```
